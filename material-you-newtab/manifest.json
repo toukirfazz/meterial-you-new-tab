@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Material You New Tab",
+  "version": "1.0.0",
+  "description": "A modern Material You inspired new tab page with dynamic backgrounds, customizable quick-access tiles, and responsive design.",
+  "permissions": [
+    "storage"
+  ],
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Material You New Tab Settings"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "author": "Material You New Tab Team",
+  "homepage_url": "https://github.com/material-you-newtab/extension"
+}
+
